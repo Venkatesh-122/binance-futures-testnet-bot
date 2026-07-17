@@ -1,0 +1,21 @@
+[2026-07-17 14:03:47,988] INFO [orders.py:46]: Assembling standard MARKET BUY order contract parameters for BTCUSDT.
+[2026-07-17 14:03:47,989] DEBUG [client.py:53]: Dispatching POST request to URL: https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.005', 'timeInForce': 'GTC', 'timestamp': 1784277227988}
+[2026-07-17 14:03:48,525] ERROR [client.py:76]: Binance Error (-1106): Parameter 'timeinforce' sent when not required.
+[2026-07-17 14:04:03,756] INFO [orders.py:46]: Assembling standard LIMIT SELL order contract parameters for BTCUSDT.
+[2026-07-17 14:04:03,759] DEBUG [client.py:53]: Dispatching POST request to URL: https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.005', 'timeInForce': 'GTC', 'price': '64500.0', 'timestamp': 1784277243759}
+[2026-07-17 14:04:04,099] DEBUG [client.py:65]: API Response matched perfectly: {'orderId': 22274949338, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'JLfkP83FxXOGM2eKqBi34X', 'price': '64500.00', 'origQty': '0.0050', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1784277245380}
+[2026-07-17 14:06:25,533] INFO [orders.py:48]: Assembling standard MARKET BUY order contract parameters for BTCUSDT.
+[2026-07-17 14:06:25,533] DEBUG [client.py:53]: Dispatching POST request to URL: https://testnet.binancefuture.com/fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.005', 'timestamp': 1784277385533}
+[2026-07-17 14:06:26,136] DEBUG [client.py:65]: API Response matched perfectly: {'orderId': 22275372123, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'Rqe4hD9it7NX9YFEOkIGqF', 'price': '0.00', 'origQty': '0.0050', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1784277387419}
+2026-07-17 14:21:11,625 - INFO - Placing MARKET BUY order for BTCUSDT
+2026-07-17 14:21:11,626 - DEBUG - Sending request to /fapi/v1/order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.005', 'timestamp': 1784278271626}
+2026-07-17 14:21:11,629 - DEBUG - Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2026-07-17 14:21:12,181 - DEBUG - https://testnet.binancefuture.com:443 "POST /fapi/v1/order HTTP/1.1" 200 None
+2026-07-17 14:21:42,831 - INFO - Placing MARKET SELL order for BTCUSDT
+2026-07-17 14:21:42,831 - DEBUG - Sending request to /fapi/v1/order with params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': '0.005', 'timestamp': 1784278302831}
+2026-07-17 14:21:42,836 - DEBUG - Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2026-07-17 14:21:43,343 - DEBUG - https://testnet.binancefuture.com:443 "POST /fapi/v1/order HTTP/1.1" 200 None
+2026-07-17 14:21:47,329 - INFO - Placing LIMIT BUY order for BTCUSDT
+2026-07-17 14:21:47,329 - DEBUG - Sending request to /fapi/v1/order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.005', 'price': '63000.0', 'timeInForce': 'GTC', 'timestamp': 1784278307329}
+2026-07-17 14:21:47,334 - DEBUG - Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2026-07-17 14:21:47,713 - DEBUG - https://testnet.binancefuture.com:443 "POST /fapi/v1/order HTTP/1.1" 200 None
